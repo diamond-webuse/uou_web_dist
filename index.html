@@ -3,6 +3,12 @@
     <!-- ... -->
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <script src="flutter.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
 
@@ -12,7 +18,7 @@
 <script>
     window.addEventListener("load", function (ev) {
         _flutter.loader.loadEntrypoint({
-            onEntrypointLoaded: async function(engineInitializer) {
+            onEntrypointLoaded: async function (engineInitializer) {
                 let appRunner = await engineInitializer.initializeEngine({
                     // Pass a reference to "div#flutter_host" into the Flutter engine.
                     hostElement: document.querySelector("#flutter_host")
